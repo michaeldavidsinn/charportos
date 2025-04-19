@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Charlene Cayliani</title>
+    <meta name="author" content="tansh" />
+    <meta name="description" content="HTMLTemplate" />
+    <meta name="keywords" content="portfolio, personal" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/images/charlogo.png" sizes="32x32" />
+    
+    <link
+      rel="icon"
+      href="assets/images/charlogo.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/images/charlogo.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/charlogo.png"
+    />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fonts/iconfont.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+
+.dtr-about {
+  margin-left: 40px; /* Sesuaikan nilai ini sesuai kebutuhan */
+}
+
+.dtr-about__img img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover; /* Agar gambar tetap proporsional dalam kotak */
+    display: block; /* Menghilangkan spasi ekstra */
+}
+
+      .typing-container {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--dtr-primary);
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .typing-container::after {
+        position: absolute;
+        right: 0;
+        animation: blink 0.7s infinite;
+      }
+
+      .cursor {
+            display: inline-block;
+            width: 8px;
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        .scroller {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            -webkit-mask: linear-gradient(
+                90deg,
+                transparent,
+                white 20%,
+                white 80%,
+                transparent
+            );
+            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        }
+
+        .scroller__inner {
+            display: flex;
+            gap: 200px; /* Atur jarak antar gambar */
+            width: max-content;
+            flex-wrap: nowrap;
+            animation: scroll var(--_animation-duration, 40s) linear infinite;
+        }
+
+        .scroller__inner img {
+          width: 100px;  /* Atur ukuran lebar gambar */
+    height: auto;  /* Menjaga rasio aspek gambar */
+    border-radius: 10px;
+        }
+
+        .scroller[data-direction="right"] {
+            --_animation-direction: reverse;
+        }
+
+        .scroller[data-direction="left"] {
+            --_animation-direction: forwards;
+        }
+
+        .scroller[data-speed="fast"] {
+            --_animation-duration: 10s;
+        }
+
+        .scroller[data-speed="slow"] {
+            --_animation-duration: 60s;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translateX(calc(-50% - 25px)); /* Sesuaikan agar looping smooth */
+            }
+        }
+
+
+        .scroller__inner img[src*="procreate.png"] {
+          height: 120px; 
+    width: 200px; /* Sesuaikan lebar */
+    margin-top: 8px;
+        }
+
+        .scroller__inner img[src*="canvabenars.png"] {
+    height: 130px; /* Sesuaikan lebar */
+    width: 130px; 
+        }
+
+        .scroller__inner img[src*="ai.png"] {
+    height: 110px; /* Sesuaikan lebar */
+    width: 110px; 
+    margin-top: 10px;
+        }
+
+        .scroller__inner img[src*="ps.png"] {
+    height: 110px; /* Sesuaikan lebar */
+    width: 110px; 
+    margin-top: 10px;
+        }
+
+        .scroller__inner img[src*="kepkatbenar.png"] {
+    height: 130px; /* Sesuaikan lebar */
+    width: 130px; 
+        }
+
+
+
+    </style>
+
+<style>
+  .resize-img {
+      width: 1200px;
+      height: 1200px;
+      object-fit: cover; /* Agar tetap proporsional tanpa merusak aspek rasio */
+  }
+</style>
+  </head>
+
+  <body>
+    <div id="dtr-wrapper" class="clearfix">
+      <!-- preloader starts -->
+      <div class="dtr-preloader">
+        <div class="dtr-preloader-inner">
+          <div class="dtr-loader">Loading...</div>
+        </div>
+      </div>
+      <!-- preloader ends -->
+
+      <!-- Small Devices Header starts
+============================================= -->
+      <div id="dtr-responsive-header">
+        <div class="container">
+          <!-- logo -->
+          <a class="dtr-resp-logo" href="index.html"
+            ><img
+              src="assets/images/logo.png"
+              alt="logo"
+              width="88"
+              height="25"
+          /></a>
+          <!-- menu button -->
+          <button
+            id="dtr-resp-menu-button"
+            class="dtr-hamburger"
+            type="button"
+            aria-label="Menu Button"
+          >
+            <span class="dtr-hamburger-lines-wrapper"
+              ><span class="dtr-hamburger-lines"></span
+            ></span>
+          </button>
+        </div>
+        <div class="dtr-responsive-header-menu"></div>
+      </div>
+      <!-- Small Devices Header ends
+============================================= -->
+
+      <!-- header starts
+============================================= -->
+      <header id="dtr-header-global" class="fixed-top dtr-header">
+        <!-- == header content starts == -->
+        <div class="dtr-header-global-content">
+          <!-- header left starts -->
+          <div class="dtr-header-left">
+            <!-- logo -->
+            <a class="logo-default" href="index.html"
+              ><img
+                src="assets/images/charlogo.png"
+                alt="logo"
+                width="58"
+                height="15"
+            /></a>
+            <!-- logo on scroll -->
+            <a class="logo-alt" href="index.html"
+              ><img
+                src="assets/images/charlogo.png"
+                alt="logo"
+                width="58"
+                height="15"
+            /></a>
+          </div>
+          <!-- header left ends -->
+
+          <!-- header right starts -->
+          <div class="dtr-header-right">
+            <button
+              id="dtr-menu-button"
+              class="dtr-hamburger"
+              type="button"
+              aria-label="Menu Button"
+            >
+              <span class="dtr-hamburger-lines-wrapper"
+                ><span class="dtr-hamburger-lines"></span
+              ></span>
+            </button>
+          </div>
+          <!-- header right ends -->
+        </div>
+        <!-- == header content ends == -->
+
+        <!-- == sidemenu section starts == -->
+        <a href="#" class="dtr-navigation-trigger">Menu<span></span></a>
+        <a
+          href="#"
+          class="dtr-navigation-close-trigger"
+          aria-label="Menu Close Button"
+        ></a>
+        <div class="dtr-sidemenu-scroll"></div>
+        <div class="dtr-sidemenu-wrapper">
+          <!-- menu links starts -->
+          <ul class="dtr-nav dtr-main-nav dtr-vertical-nav">
+            <li class="menu-item">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+            </li>
+            <li class="menu-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="menu-item">
+              <a href="#works" class="nav-link">Works</a>
+            </li>
+            <li class="menu-item">
+              <a href="#about" class="nav-link">About Me</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contact" class="nav-link">Contact Me</a>
+            </li>
+          </ul>
+          <!-- menu links ends -->
+        </div>
+        <!-- == sidemenu section ends == -->
+      </header>
+      <!-- header ends
+================================================== -->
+
+      <!-- ===== main content area starts ===== -->
+      <div id="dtr-main-content">
+        <!--===== hero section starts =====-->
+        <section class="dtr-section hero-section bg-color-secondary-light">
+          <div class="container">
+            <div class="row">
+              <!--== first column starts ==-->
+              <div class="col-12 col-md-6">
+                <div class="hero-wheel-wrap">
+                  <div
+                    class="dtr-rotating-img hero-wheel"
+                    style="animation-duration: 20s"
+                  >
+                    <div
+                      class="dtr-rotating-img__entry wow animate__rollIn"
+                      data-wow-delay="0.6s"
+                    >
+                      <img
+                        width="227"
+                        height="228"
+                        src="assets/images/circle-stripes.png"
+                        alt="circle"
+                      />
+                    </div>
+                  </div>
+                  <!-- heading -->
+                  <h1>Hi There, I am Charlene.</h1>
+                  <div class="typing-container">
+                    <span id="text"></span><span class="cursor">|</span>
+                </div>
+            
+                </div>
+                <!-- spacer -->
+                <span class="spacer spacer-20"></span>
+
+                <!-- hero content starts -->
+                <div class="hero-text-shrink">
+                  <h6 class="text-color-secondary">
+                    Let’s create something awesome.
+                  </h6>
+                  <span class="spacer spacer-20"></span>
+                  <p>
+                    Having focus on <b>Web</b> and <b>Graphic Design</b> mainly
+                    Branding, I am always ready for new proposals. You can learn
+                    about me and my work in this <b>CV</b>!
+                  </p>
+                  <span class="spacer spacer-5"></span>
+
+                  <!-- social icons start -->
+                  <div class="dtr-social-widget text-left">
+                    <ul class="dtr-social">
+                        <li>
+                            <a class="dtr-behance" href="#" title="Behance" target="_blank" rel="nofollow" aria-label="Behance">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dtr-instagram" href="https://www.instagram.com/charlenecayliani/" title="Instagram" target="_blank" rel="nofollow" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                  <!-- social icons end -->
+                </div>
+                <!-- hero content ends -->
+              </div>
+              <!--== first column ends ==-->
+
+              <!--== second column starts ==-->
+              <div class="col-12 col-md-6 small-device-top-space">
+                <!-- about starts -->
+                <div class="dtr-about">
+                  <figure class="dtr-about__img">
+                    <img src="assets/images/carlin1.jpg" alt="about image" />
+                  </figure>
+                  <div class="dtr-about__content">
+                    <h6 class="dtr-about__heading wow animate__fadeInLeft">
+                      Graphic Designer
+                    </h6>
+                    <span class="clearfix"></span>
+                    <span
+                      class="dtr-about__subtext wow animate__fadeInLeft"
+                      data-wow-delay="0.3s"
+                      >Based In Surabaya</span
+                    >
+                  </div>
+                  <span class="dtr-rhom-shape"
+                    ><img src="assets/images/rhom1.png" alt="shape"
+                  /></span>
+                </div>
+                <!-- about ends -->
+              </div>
+              <!--== second column ends ==-->
+            </div>
+          </div>
+        </section>
+
+        <!--===== counter section starts =====-->
+        <section class="dtr-section padding-y-100 bg-color-secondary">
+          <div class="container">
+            <div class="row">
+              <!--== column 1 starts ==-->
+              <div class="col-12 col-md-4" style="margin-top: 30px;">
+                <h6 class="dtr-counter__info-text" style="font-size: 20px;">
+                  Love to create one-of-a-kind design that deliver meaningful
+                  and thoughtful experiences.
+                </h6>
+              </div>
+              <!--== column 1 ends ==-->
+
+              <!--== column 2 starts ==-->
+              <div class="col-12 col-md-4">
+                <div class="dtr-counter">
+                  <p>
+                    <span
+                      class="dtr-counter__number counting-number"
+                      data-from="1"
+                      data-to="4"
+                      data-speed="1600"
+                      >3</span
+                    >
+                  </p>
+                  <h6 class="dtr-counter__heading">Years Experience</h6>
+                </div>
+              </div>
+              <!--== column 2 ends ==-->
+
+              <!--== column 3 starts ==-->
+              <div class="col-12 col-md-4">
+                <div class="dtr-counter">
+                  <p>
+                    <span
+                      class="dtr-counter__number counting-number"
+                      data-from="1"
+                      data-to="2"
+                      data-speed="1600"
+                      >2</span
+                    >
+                  </p>
+                  <h6 class="dtr-counter__heading">Best Design Awards</h6>
+                </div>
+              </div>
+              <!--== column 3 ends ==-->
+            </div>
+          </div>
+        </section>
+        <!--===== counter section ends =====-->
+
+        <!--===== about section starts =====-->
+        <section id="about" class="dtr-section padding-y-100">
+          <div class="container">
+            <div class="row">
+              <!--== column 1 starts ==-->
+              <div class="col-12 col-md-6">
+                <!-- about starts -->
+                <div class="dtr-about2">
+                  <div class="dtr-about2__img">
+                    <figure>
+                      <img
+                      src="assets/images/carlinfoto2.jpg"
+                      alt="about-img2"
+                      style="clip-path: inset(20% 0 0 0); width: 100%; height: auto; position: relative; top: -70px; transform: scale(1.1);"
+
+                    />
+                    </figure>
+                    <div class="dtr-about2__circle-text wow animate__rollIn">
+                      <img
+                        src="assets/images/circular-text.png"
+                        alt="circle-text"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="dtr-about2__sign-wrap wow animate__fadeInUp"
+                    data-wow-delay="0.2s"
+                    style="position: relative; top: -100px;"
+                  >
+                    <p class="dtr-about2__sign">Charlene&nbsp; Cayliani</p>
+                    <p>Graphic Designer</p>
+                  </div>
+                </div>
+                <!-- about ends -->
+              </div>
+              <!--== column 1 ends ==-->
+
+              <!--== column 2 starts ==-->
+              <div class="col-12 col-md-6">
+                <h2>
+                  I'm artist at heart,<br />
+                  and it shows.
+                </h2>
+                <span class="spacer spacer-20"></span>
+                <h6 style="font-size: 1.5em;">
+                  I am Charlene Cayliani Wijaya, a graphic designer who finds beauty in balance and meaning in every detail. To me, design is more than visuals; it’s a language that speaks without words.
+                </h6>
+                <span class="spacer spacer-20"></span>
+                <p style="font-size: 1.2em;">
+                  With a passion for clean aesthetics, thoughtful storytelling, and purposeful composition, I bring ideas to life through branding, layout, and digital design. Whether it’s a bold concept or a quiet visual whisper, I believe every element should serve intention.<br><br>
+                  
+                  I design not just to be seen, but to be felt - crafting visuals that resonate, communicate, and leave a lasting impression.
+                </p>
+                <span class="spacer spacer-10"></span>
+                <!-- button -->
+                <p class="dtr-footer-btn">
+                  <a
+                    class="dtr-btn dtr-btn-contrast"
+                    href="#contact"
+                    role="button"
+                  >
+                    <span class="dtr-btn__text">Contact Me</span>
+                  </a>
+                </p>
+              </div>
+              <!--== column 2 ends ==-->
+            </div>
+          </div>
+        </section>
+        <!--===== about section ends =====-->
+
+        <!--===== resume section starts =====-->
+        <section class="dtr-section padding-y-100">
+          <div class="container">
+            <div class="row">
+              <!--== intro starts ==-->
+              <div class="col-12">
+                <div class="dtr-intro width-50-center-align">
+                  <h2 class="dtr-intro__heading">My Resume</h2>
+                  <p>
+                    There are many variations of passages of lorem ipsum
+                    available, but the majority have suffered alteration in some
+                    form
+                  </p>
+                </div>
+              </div>
+              <!--== intro ends ==-->
+
+              <!-- spacer -->
+              <span class="spacer spacer-10"></span>
+
+              <!--== column 1 starts ==-->
+              <div class="col-12 col-md-6">
+                <!-- box 1 starts -->
+                <div
+                  class="padding-50 bg-color-primary text-color-white wow animate__fadeIn"
+                >
+                  <h5>Work Experience</h5>
+                  <span class="spacer spacer-20"></span>
+
+                  <!-- timeline item starts -->
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight">2022 - Present</span>
+                    <h6 class="dtr-timeline__heading">Piano Teacher</h6>
+                    <div class="dtr-timeline__content">
+                      Allegro Music Education Centre<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+                  <!-- timeline item ends -->
+
+                  <span class="spacer spacer-30"></span>
+
+                  <!-- timeline item starts -->
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight">2024 - 2025</span>
+                    <h6 class="dtr-timeline__heading">
+                      UCARE Public Relation Coordinator Commitee
+                    </h6>
+                    <div class="dtr-timeline__content">
+                      Universitas Ciputra<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+                  <!-- timeline item ends -->
+
+                  <span class="spacer spacer-30"></span>
+
+                   <!-- timeline item starts -->
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight">2023</span>
+                    <h6 class="dtr-timeline__heading">Leadership101 Inventory Division Commitee</h6>
+                    <div class="dtr-timeline__content">
+                      Universitas Ciputra<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+                  <!-- timeline item ends -->
+
+                  <span class="spacer spacer-30"></span>
+
+                  <!-- timeline item starts -->
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight"> 2023 - 2024</span>
+                    <h6 class="dtr-timeline__heading">
+                      Mentoring Department Organization
+                    </h6>
+                    <div class="dtr-timeline__content">
+                      Universitas Ciputra<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+                  <!-- timeline item ends -->
+
+                  <span class="spacer spacer-30"></span>
+
+                  <!-- timeline item starts -->
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight">2024</span>
+                    <h6 class="dtr-timeline__heading">
+                      Co-facilitator of SLDR/C
+                    </h6>
+                    <div class="dtr-timeline__content">
+                      Universitas Ciputra<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+
+                  <span class="spacer spacer-30"></span>
+
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight">2023</span>
+                    <h6 class="dtr-timeline__heading">
+                      AMD O'Week Batch 1-2
+                    </h6>
+                    <div class="dtr-timeline__content">
+                      Universitas Ciputra<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+
+                </div>
+                <!-- box 1 ends -->
+
+                <!-- spacer -->
+              </div>
+              <!--== column 1 ends ==-->
+
+              <!--== column 2 starts ==-->
+              <div class="col-12 col-md-6 small-device-top-space">
+                <!-- box 1 starts -->
+                <div
+                  class="padding-50 bg-color-secondary text-color-white wow animate__fadeIn"
+                  data-wow-delay=".4s"
+                >
+                  <h5>Academic Journey</h5>
+                  <span class="spacer spacer-20"></span>
+
+                  <!-- timeline item starts -->
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight bg-color-primary"
+                      >2022 - Now</span
+                    >
+                    <h6 class="dtr-timeline__heading">University (GPA: 3.53)</h6>
+                    <div class="dtr-timeline__content">
+                      SMA St.Louis 1<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+                  <!-- timeline item ends -->
+
+                  <span class="spacer spacer-30"></span>
+
+                  <!-- timeline item starts -->
+                  <div class="dtr-timeline">
+                    <span class="dtr-timeline__highlight bg-color-primary"
+                      >2019 - 2022</span
+                    >
+                    <h6 class="dtr-timeline__heading">
+                      Senior High School (Average Final Score : 89.61)
+                    </h6>
+                    <div class="dtr-timeline__content">
+                      SMA St.Louis 1<br />
+                      Surabaya, Indonesia
+                    </div>
+                  </div>
+                  <!-- timeline item ends -->
+                </div>
+                <!-- box 1 ends -->
+
+                <!-- spacer -->
+                <!-- spacer -->
+                <span class="spacer spacer-40"></span>
+
+
+                <!-- box 3 starts -->
+                <div class="padding-50 bg-color-primary text-color-white">
+                  <h5>Personal Skills</h5>
+                  <span class="spacer spacer-20"></span>
+              
+                  <!-- inner row - for list columns starts -->
+                  <div class="row">
+                      <!-- column 1 starts -->
+                      <div class="col-12 col-md-6">
+                          <ul class="dtr-icon-list">
+                              <li>
+                                  <span class="dtr-icon-list__icon text-color-secondary">
+                                      <i class="fas fa-tasks"></i>
+                                  </span>
+                                  <span class="dtr-icon-list__text">Taking Responsibility</span>
+                              </li>
+                              <li>
+                                  <span class="dtr-icon-list__icon text-color-secondary">
+                                      <i class="fas fa-comments"></i>
+                                  </span>
+                                  <span class="dtr-icon-list__text">Communication</span>
+                              </li>
+                              <li>
+                                  <span class="dtr-icon-list__icon text-color-secondary">
+                                      <i class="fas fa-clock"></i>
+                                  </span>
+                                  <span class="dtr-icon-list__text">Time Management</span>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- column 1 ends -->
+              
+                      <!-- column 2 starts -->
+                      <div class="col-12 col-md-6">
+                          <ul class="dtr-icon-list">
+                              <li>
+                                  <span class="dtr-icon-list__icon text-color-secondary">
+                                      <i class="fas fa-brain"></i>
+                                  </span>
+                                  <span class="dtr-icon-list__text">Willingness to Learn</span>
+                              </li>
+                              <li>
+                                  <span class="dtr-icon-list__icon text-color-secondary">
+                                      <i class="fas fa-lightbulb"></i>
+                                  </span>
+                                  <span class="dtr-icon-list__text">Creativity</span>
+                              </li>
+                              <li>
+                                <span class="dtr-icon-list__icon text-color-secondary">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <span class="dtr-icon-list__text">Detail-Oriented</span>
+                            </li>
+                          </ul>
+                      </div>
+                      <!-- column 2 ends -->
+                  </div>
+                  <!-- inner row - for list columns ends -->
+              </div>
+
+              <span class="spacer spacer-40"></span>
+
+              <div class="padding-50 bg-color-secondary-light">
+                <h5>Language Skills</h5>
+                <span style="display:block; height: 25px;"></span>
+
+                <!-- skill points starts -->
+                <div class="dtr-skills-wrapper">
+                    <div class="dtr-skills dtr-skills--10points">
+                        <p class="dtr-skills__heading">Bahasa Indonesia</p>
+                        <div class="dtr-skills__dots"></div>
+                    </div>
+                    <div class="dtr-skills dtr-skills--8points">
+                        <p class="dtr-skills__heading">English</p>
+                        <div class="dtr-skills__dots"></div>
+                    </div>
+                    <div class="dtr-skills dtr-skills--5points">
+                        <p class="dtr-skills__heading">Mandarin</p>
+                        <div class="dtr-skills__dots"></div>
+                    </div>
+                </div>
+                <!-- skill points ends -->
+
+            </div>
+                <!-- box 3 ends -->
+              </div>
+              <!--== column 2 ends ==-->
+            </div>
+          </div>
+        </section>
+        <!--===== resume section ends =====-->
+
+         <!--===== hero section ends =====-->
+
+         <section class="dtr-section padding-y-100 bg-color-secondary-light">
+
+          <h2 class="dtr-intro__heading222">Software</h2>
+
+          <div class="scroller" data-direction="left" data-speed="fast">
+              <div class="scroller__inner">
+                  <img src="assets/images/ai.png" alt="Company" />
+                  <img src="assets/images/kepkatbenar.png" alt="Company" />
+                  <img src="assets/images/canvabenars.png" alt="Company" />
+                  <img src="assets/images/ps.png" alt="Company" />
+                  <img src="assets/images/procreate.png" alt="Company" />
+              </div>
+          </div>
+        </section>
+
+
+        <!--===== service section starts =====-->
+       <!--===== service section starts =====-->
+<section id="services" class="dtr-section padding-y-100">
+  <div class="container">
+    <div class="row">
+      <!--== intro starts ==-->
+      <div class="col-12">
+        <div class="dtr-intro width-50-center-align">
+          <h2 class="dtr-intro__heading">Technical Skills</h2>
+          <p>
+            There are many variations of my own technical skills that enables to work on different environment
+          </p>
+        </div>
+      </div>
+      <!--== intro ends ==-->
+
+      <!-- spacer -->
+      <span class="spacer spacer-10"></span>
+
+      <!--== column 1 starts ==-->
+      <div class="col-12 col-md-3">
+        <!-- servicebox starts -->
+        <div class="dtr-servicebox-wrapper wow animate__fadeIn">
+          <div class="dtr-servicebox">
+            <div class="dtr-servicebox__icon-wrapper"></div>
+            <div class="dtr-servicebox__icon">
+              <i aria-hidden="true" class="icon-spa-solid"></i>
+            </div>
+            <h4 class="dtr-servicebox__title">Social Media Strategist</h4>
+            <div class="dtr-servicebox__content">
+              <h4 class="dtr-servicebox__subtitle">Social Media Strategist</h4>
+              <div class="dtr-servicebox__desc">
+                with a deep understanding of audience behavior and digital trends, crafting data-driven campaigns that increase engagement, foster strong online communities, and enhance brand visibility across multiple platforms.
+              </div>
+            </div>
+            <div class="dtr-servicebox__img">
+              <img width="223" height="223" src="assets/images/shapebg1-light.png" alt="image" />
+            </div>
+          </div>
+        </div>
+        <!-- servicebox ends -->
+      </div>
+      <!--== column 1 ends ==-->
+
+      <!--== column 2 starts ==-->
+      <div class="col-12 col-md-3">
+        <!-- servicebox starts -->
+        <div class="dtr-servicebox-wrapper dtr-servicebox--clr-scheme3 wow animate__fadeIn" data-wow-delay="0.3s">
+          <div class="dtr-servicebox">
+            <div class="dtr-servicebox__icon-wrapper"></div>
+            <div class="dtr-servicebox__icon">
+              <i aria-hidden="true" class="icon-bullseye-solid"></i>
+            </div>
+            <h4 class="dtr-servicebox__title">Branding</h4>
+            <div class="dtr-servicebox__content">
+              <h4 class="dtr-servicebox__subtitle">Branding</h4>
+              <div class="dtr-servicebox__desc">
+                I specialize in branding, crafting impactful identities that resonate with audiences and elevate businesses.
+              </div>
+            </div>
+            <div class="dtr-servicebox__img">
+              <img width="223" height="223" src="assets/images/shapebg2-light.png" alt="image" />
+            </div>
+          </div>
+        </div>
+        <!-- servicebox ends -->
+      </div>
+      <!--== column 2 ends ==-->
+
+      <!--== column 3 starts ==-->
+      <div class="col-12 col-md-3">
+        <!-- servicebox starts -->
+        <div class="dtr-servicebox-wrapper dtr-servicebox--clr-scheme2 wow animate__fadeIn" data-wow-delay="0.6s">
+          <div class="dtr-servicebox">
+            <div class="dtr-servicebox__icon-wrapper"></div>
+            <div class="dtr-servicebox__icon">
+              <i aria-hidden="true" class="icon-window-restore-solid"></i>
+            </div>
+            <h4 class="dtr-servicebox__title">Content Creator</h4>
+            <div class="dtr-servicebox__content">
+              <h4 class="dtr-servicebox__subtitle">Content Creator</h4>
+              <div class="dtr-servicebox__desc">
+                passionate about storytelling and visual communication, producing engaging and high-quality content that captivates audiences, strengthens brand identity, and drives meaningful interactions across digital platforms.
+              </div>
+            </div>
+            <div class="dtr-servicebox__img">
+              <img width="223" height="223" src="assets/images/shapebg3-light.png" alt="image" />
+            </div>
+          </div>
+        </div>
+        <!-- servicebox ends -->
+      </div>
+      <!--== column 3 ends ==-->
+
+      <!--== column 4 starts (for Graphic Design) ==-->
+      <div class="col-12 col-md-3">
+        <!-- servicebox starts -->
+        <div class="dtr-servicebox-wrapper wow animate__fadeIn" data-wow-delay="0.9s">
+          <div class="dtr-servicebox">
+            <div class="dtr-servicebox__icon-wrapper"></div>
+            <div class="dtr-servicebox__icon">
+              <i aria-hidden="true" class="fas fa-paint-brush"></i>
+            </div>
+            <h4 class="dtr-servicebox__title">Graphic Design</h4>
+            <div class="dtr-servicebox__content">
+              <h4 class="dtr-servicebox__subtitle">Graphic Design</h4>
+              <div class="dtr-servicebox__desc">
+                I create visually appealing and functional designs for print and digital media, focusing on enhancing user experience and communicating the right message through design.
+              </div>
+            </div>
+            <div class="dtr-servicebox__img">
+              <img width="223" height="223" src="assets/images/shapebg1-light.png" alt="image" />
+            </div>
+          </div>
+        </div>
+        <!-- servicebox ends -->
+      </div>
+      <!--== column 4 ends ==-->
+      
+    </div>
+  </div>
+</section>
+<!--===== service section ends =====-->
+
+        <!--===== service section ends =====-->
+
+        <!--===== works section starts =====-->
+        <section
+          id="works"
+          class="dtr-section padding-top-100 bg-color-secondary-light"
+        >
+          <!--== intro starts ==-->
+          <div class="container">
+            <div class="dtr-intro--spaced-col">
+              <h2 class="dtr-intro__heading">My Works</h2>
+              <p>
+                <a class="dtr-btn" href="#about" role="button"
+                  ><span class="dtr-btn__text">View Portfolio</span></a
+                >
+              </p>
+            </div>
+          </div>
+          <!--== intro ends ==-->
+
+          <!-- spacer -->
+          <span class="spacer spacer-50"></span>
+
+          <!--== portfolio starts ==-->
+          <div
+            class="dtr-portfolio-grid dtr-portfolio-masonry dtr-portfolio-grid-4col dtr-portfolio-compact"
+          >
+            <!-- portfolio item 1 starts -->
+            <div class="dtr-portfolio-item isotope-item creative branding all">
+              <div class="dtr-portfolio-item__wrapper">
+                <a
+                  class="dtr-portfolio-item__link"
+                  href="desauge.html"
+                  target="_self"
+                  aria-label="Illustration"
+                ></a>
+                <div class="dtr-portfolio-item__img">
+                  <img
+                    src="assets/images/desauge_thumb.jpg"
+                    alt="Illustration"
+                  />
+                </div>
+                <div class="dtr-portfolio-item__content">
+                  <h4 class="dtr-portfolio-item__heading">De'Sauge</h4>
+                  <div class="clearfix"></div>
+                  <p class="dtr-portfolio-item__subheading">
+                    Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item 1 ends -->
+
+            <!-- portfolio item 2 starts -->
+            <div class="dtr-portfolio-item isotope-item branding all">
+              <div class="dtr-portfolio-item__wrapper">
+                <a
+                  class="dtr-portfolio-item__link"
+                  href="jete.html"
+                  target="_self"
+                  aria-label="Branding"
+                ></a>
+                <div class="dtr-portfolio-item__img">
+                  <img
+                    src="assets/images/item-5-1200x1200.jpg"
+                    alt="Branding"
+                  />
+                </div>
+                <div class="dtr-portfolio-item__content">
+                  <h4 class="dtr-portfolio-item__heading">JETE</h4>
+                  <div class="clearfix"></div>
+                  <p class="dtr-portfolio-item__subheading">Branding</p>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item 2 ends -->
+
+            <!-- portfolio item 3 starts -->
+            <div class="dtr-portfolio-item isotope-item branding all">
+              <div class="dtr-portfolio-item__wrapper">
+                <a
+                  class="dtr-portfolio-item__link"
+                  href="charsrecipe.html"
+                  target="_self"
+                  aria-label="Branding"
+                ></a>
+                <div class="dtr-portfolio-item__img">
+                  <img
+                    src="assets/images/charsrec_thumb.png"
+                    alt="Branding"
+                  />
+                </div>
+                <div class="dtr-portfolio-item__content">
+                  <h4 class="dtr-portfolio-item__heading">Char's Recipe</h4>
+                  <div class="clearfix"></div>
+                  <p class="dtr-portfolio-item__subheading">Branding</p>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item 3 ends -->
+
+            <!-- portfolio item 4 starts -->
+            <div class="dtr-portfolio-item isotope-item branding all">
+              <div class="dtr-portfolio-item__wrapper">
+                <a
+                  class="dtr-portfolio-item__link"
+                  href="spootanfest.html"
+                  target="_self"
+                  aria-label="Annshvets"
+                ></a>
+                <div class="dtr-portfolio-item__img">
+                  <img
+                    src="assets/images/item-2-1200x1200.jpg"
+                    alt="Annshvets"
+                  />
+                </div>
+                <div class="dtr-portfolio-item__content">
+                  <h4 class="dtr-portfolio-item__heading">Spootan Fest</h4>
+                  <div class="clearfix"></div>
+                  <p class="dtr-portfolio-item__subheading">Branding</p>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item 4 ends -->
+
+            <!-- portfolio item 5 starts -->
+            <div class="dtr-portfolio-item isotope-item branding web all">
+              <div class="dtr-portfolio-item__wrapper">
+                <a
+                  class="dtr-portfolio-item__link"
+                  href="iaware.html"
+                  target="_self"
+                  aria-label="Fredi"
+                ></a>
+                <div class="dtr-portfolio-item__img">
+                  <img src="assets/images/iaware2s.PNG" alt="Fredi" />
+                </div>
+                <div class="dtr-portfolio-item__content">
+                  <h4 class="dtr-portfolio-item__heading">iAware</h4>
+                  <div class="clearfix"></div>
+                  <p class="dtr-portfolio-item__subheading">
+                    Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item 5 ends -->
+
+          </div>
+          <!--== portfolio ends ==-->
+        </section>
+        <!--===== works section ends =====-->
+
+        <!--===== contact section starts =====-->
+        <section
+          id="contact"
+          class="dtr-section bg-color-secondary-light padding-y-100"
+        >
+          <div class="container">
+            <div class="row">
+              <!--== column 1 starts ==-->
+              <div class="col-12 col-md-6">
+                <h2>Contact Me</h2>
+                <span class="spacer spacer-50"></span>
+
+                <!-- feature starts -->
+                <div
+                  class="dtr-feature dtr-feature--style-default dtr-feature--text-left dtr-feature--icon-align-left dtr-feature--size-small"
+                >
+                  <div class="dtr-feature__icon">
+                    <i class="icon-phone-volume-solid" aria-hidden="true"></i>
+                  </div>
+                  <div class="dtr-feature__content">
+                    <p class="dtr-feature__subtext">
+                      Just wanna say hello! Give me a call
+                    </p>
+                    <h6 class="dtr-feature__heading">081252657775</h6>
+                  </div>
+                </div>
+                <!-- feature ends -->
+
+                <span class="spacer spacer-50"></span>
+
+                <!-- feature starts -->
+                <div
+                  class="dtr-feature dtr-feature--style-default dtr-feature--icon-vert-align-top dtr-feature--text-left dtr-feature--icon-align-left dtr-feature--size-small"
+                >
+                  <div class="dtr-feature__icon">
+                    <i
+                      class="icon-envelope-circle-check-solid"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <div class="dtr-feature__content">
+                    <p class="dtr-feature__subtext">
+                      For collaboration, mail me
+                    </p>
+                    <h6 class="dtr-feature__heading">charlene.cayliani@gmail.com</h6>
+                  </div>
+                </div>
+                <!-- feature ends -->
+
+                <span class="spacer spacer-50"></span>
+
+                <!-- feature starts -->
+                <div
+                  class="dtr-feature dtr-feature--style-default dtr-feature--icon-vert-align-top dtr-feature--text-left dtr-feature--icon-align-left dtr-feature--size-small"
+                >
+                  <div class="dtr-feature__icon">
+                    <i class="icon-location-arrow-solid" aria-hidden="true"></i>
+                  </div>
+                  <div class="dtr-feature__content">
+                    <p class="dtr-feature__subtext">Walk-in to meet me</p>
+                    <h6 class="dtr-feature__heading" style="max-width: 300px; line-height: 1.4;">
+                      Allegro Music Education Centre <br>Jl. Darmo Harapan Utara 8 / EU-19, Surabaya, Jawa Timur, Indonesia,<br> 60187
+                    </h6>
+                  </div>
+                </div>
+                <!-- feature ends -->
+              </div>
+              <!--== column 1 ends ==-->
+
+              <!--== column 2 starts ==-->
+              <div class="col-12 col-md-6 small-device-top-space">
+                <div class="dtr-contact-box padding-50 bg-color-white">
+                  <div
+                    class="dtr-rotating-img contact-star"
+                    style="animation-duration: 20s"
+                  >
+                    <img
+                      width="126"
+                      height="123"
+                      src="assets/images/hepta-dark.png"
+                      alt="circle"
+                    />
+                  </div>
+
+                  <iframe 
+                  class="map-container"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.790273701514!2d112.68391497592147!3d-7.2646926927421855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fe994b91a223%3A0x60842cd1f55b9afe!2sAllegro%20Music%20Education%20Centre!5e0!3m2!1sen!2sid!4v1742707912035!5m2!1sen!2sid" 
+                  width="600" 
+                  height="450" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+                </div>
+              </div>
+              <!--== column 2 ends ==-->
+            </div>
+          </div>
+        </section>
+        <!--===== contact section ends =====-->
+      </div>
+      <!-- ===== main content area ends ===== -->
+
+      <!-- footer section starts
+================================================== -->
+      <footer id="dtr-footer-section">
+        <div class="container">
+          <!--== row 1 starts ==-->
+          <div class="row">
+            <!--== column 1 starts ==-->
+            <div class="col-12 col-md-6">
+              <div class="dtr-footer-col-shrink">
+                <a href="index.html"
+                  ><img
+                    src="assets/images/charlogo.png"
+                    alt="logo"
+                    width="88"
+                    height="25"
+                /></a>
+                <span class="spacer spacer-20"></span>
+                <p>
+                  There are many variations of passages of lorem ipsum available
+                  but the majority have suffered alteration in some form.
+                </p>
+              </div>
+            </div>
+            <!--== column 1 ends ==-->
+
+            <!--== column 2 starts ==-->
+            <div class="col-12 col-md-3 small-device-top-space">
+              <div class="dtr-footer-contact">
+                <p><a href="#">charlene.cayliani@gmail.com</a></p>
+                <p>081252657775</p>
+                <p>Allegro Music Education Centre<br />EU-19, Jl. Darmo Harapan Utara VIII</p>
+              </div>
+            </div>
+            <!--== column 2 ends ==-->
+
+            <!--== column 3 starts ==-->
+            <div class="col-12 col-md-3 text-right">
+              <div class="dtr-footer-contact small-device-top-space">
+                <p>Have a project in mind?</p>
+              </div>
+              <p class="dtr-footer-btn">
+                <a
+                  class="dtr-btn dtr-btn-contrast"
+                  href="#contact"
+                  role="button"
+                >
+                  <span class="dtr-btn__text">Contact Me</span>
+                </a>
+              </p>
+            </div>
+            <!--== column 3 ends ==-->
+          </div>
+          <!--== row 1 ends ==-->
+
+          <!--== row 2 starts ==-->
+          <div class="dtr-copyright">
+    <div class="row">
+        <!--== column 1 starts ==-->
+        <div class="col-12 col-md-6">
+            <div class="text-left">
+                <ul class="dtr-social">
+                    <li>
+                        <a class="dtr-behance" href="#" title="Behance" target="_blank" rel="nofollow" aria-label="Behance"></a>
+                    </li>
+                    <li>
+                      <a class="dtr-instagram" href="https://www.instagram.com/charlenecayliani/" title="Instagram" target="_blank" rel="nofollow" aria-label="Instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+              <!--== column 1 ends ==-->
+
+              <!--== column 2 starts ==-->
+              <div class="col-12 col-md-6 dtr-copyright-col-2">
+              </div>
+              <!--== column 2 ends ==-->
+            </div>
+          </div>
+          <!--== row 2 ends ==-->
+        </div>
+      </footer>
+      <!-- footer section ends
+================================================== -->
+      <!--== scroll to top ==-->
+      <a
+        id="take-to-top"
+        href="#"
+        class="active"
+        aria-label="Scroll To Top"
+      ></a>
+    </div>
+    <!-- #dtr-wrapper ends -->
+
+    <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/slicknav.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/forms.js"></script>
+    <script src="assets/js/animate.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- JS Files for portfolio -->
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/masonry.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".dtr-portfolio-grid").imagesLoaded(function () {
+          $(".dtr-portfolio-grid").isotope({
+            itemSelector: ".dtr-portfolio-item",
+            masonry: {},
+            layoutMode: "fitRows",
+          });
+        });
+        $(".dtr-filter-nav a").on("click", function () {
+          $(".dtr-filter-nav a").removeClass("active");
+          $(this).addClass("active");
+          var selector = $(this).attr("data-filter");
+          $(".dtr-portfolio-grid").isotope({
+            filter: selector,
+          });
+          return false;
+        });
+      });
+    </script>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- APPEAR JS -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- MAGNIFICANT JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- MOBILE MENU JS-->
+    <script src="assets/js/mobilemenu.js"></script>
+    <!-- GSAP AND LOCOMOTIV JS-->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/lenis.js"></script>
+    <!-- SLICK JS-->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- NICE SELECT JS-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- IMAGE LOADER JS-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- ISOTOPE JS-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  WOW ANIMATION JS-->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- SCRIPT JS-->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        const words = ["Graphic Designer", "Content Creator", "Branding", "Social Media Strategist"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 100;
+        const erasingSpeed = 50;
+        const delayBetweenWords = 1500;
+        const textElement = document.getElementById("text");
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+
+            if (isDeleting) {
+                textElement.innerHTML = currentWord.substring(0, charIndex);
+                charIndex--;
+            } else {
+                textElement.innerHTML = currentWord.substring(0, charIndex);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length + 1) {
+                setTimeout(() => {
+                    isDeleting = true;
+                    typeEffect();
+                }, delayBetweenWords);
+            } else if (isDeleting && charIndex === -1) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                charIndex = 0;
+                setTimeout(typeEffect, 300);
+            } else {
+                setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(typeEffect, 500);
+        });
+    </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const scrollers = document.querySelectorAll(".scroller");
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          addAnimation();
+      }
+
+      function addAnimation() {
+          scrollers.forEach((scroller) => {
+              scroller.setAttribute("data-animated", true);
+              const scrollerInner = scroller.querySelector(".scroller__inner");
+              const scrollerContent = Array.from(scrollerInner.children);
+
+              scrollerContent.forEach((item) => {
+                  const duplicatedItem = item.cloneNode(true);
+                  duplicatedItem.setAttribute("aria-hidden", true);
+                  scrollerInner.appendChild(duplicatedItem);
+              });
+          });
+      }
+  });
+</script>
+  </body>
+</html>
