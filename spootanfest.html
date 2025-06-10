@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         custom-img {
     width: 100%; /* Adjust width to your desired size */
@@ -69,9 +71,9 @@
                 <!-- header left starts -->
                 <div class="dtr-header-left">
                     <!-- logo -->
-                    <a class="logo-default" href="index.html"><img src="assets/images/charlogo.png" alt="logo" width="68" height="15"></a>
+                    <a class="logo-default" href="index.html"><img src="assets/images/charlogo.png" alt="logo" width="58" height="15"></a>
                     <!-- logo on scroll -->
-                    <a class="logo-alt" href="index.html"><img src="assets/images/charlogo.png" alt="logo" width="68" height="15"></a>
+                    <a class="logo-alt" href="index.html"><img src="assets/images/charlogo.png" alt="logo" width="58" height="15"></a>
                 </div>
                 <!-- header left ends -->
 
@@ -132,6 +134,8 @@
                         
                         <h6 class="mb-2">Role</h6>
                         <p>Merchandise Design</p> 
+                        <h6 class="mb-2">Project</h6>
+                        <p>Commercial Design 2023</p> 
                     </div>
                     <!-- column 1 ends -->
 
@@ -175,35 +179,33 @@
           
                   <div class="row" style="text-align: center; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between;">
                       <!-- Gambar pertama -->
-                      <div class="col-12 col-md-3 d-flex justify-content-center">
+                      <div class="col-12 col-md-3 d-flex justify-content-center" data-aos="fade-right">
                           <img src="assets/images/spontan2.png" class="custom-img" alt="image" style="width: 90%; height: auto;">
                       </div>
                       <!-- Gambar kedua -->
-                      <div class="col-12 col-md-3 d-flex justify-content-center">
+                      <div class="col-12 col-md-3 d-flex justify-content-center" data-aos="fade-right">
                           <img src="assets/images/spontan1.png" class="custom-img" alt="image" style="width: 90%; height: auto;">
                       </div>
                       <!-- Teks -->
-                      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-left">
                           <p style="font-weight: bold; font-size: 1rem; line-height: 1.6; margin-left: 20px; margin-right: 20px;">
-                              This is a long description or text that goes alongside the image. 
-                              You can write about the features, importance, or context of the image here.
-                              The text can be as long as needed, and it will be placed next to the image in a responsive layout.
+                            This playful blend of modern and nostalgic design is evident in the vibrant use of bold colors and handcrafted-style illustrations, creating a festive and community-driven atmosphere. The integration of contemporary and slightly retro typography further enhances this unique visual identity, which extends consistently across posters and merchandise to capture the celebratory spirit of the tape ketan workshop.
                           </p>
                       </div>
                   </div>
                   
                   <!-- Baris kedua, gambar berdampingan -->
                   <div class="row" style="text-align: center; display: flex; align-items: center; justify-content: center; margin-bottom: 30px;">
-                      <div class="col-12 col-md-5 d-flex justify-content-center">
+                      <div class="col-12 col-md-5 d-flex justify-content-center" data-aos="fade-right">
                           <img src="assets/images/spootan2.png" class="custom-img" alt="image" style="width: 100%; height: auto;">
                       </div>
-                      <div class="col-12 col-md-5 d-flex justify-content-center">
+                      <div class="col-12 col-md-5 d-flex justify-content-center" data-aos="fade-left">
                           <img src="assets/images/posterer.png" class="custom-img" alt="image" style="width: 100%; height: auto;">
                       </div>
                   </div>
                   
                   <!-- Baris ketiga, gambar tunggal -->
-                  <div class="row" style="text-align: center; display: flex; align-items: center; justify-content: center;">
+                  <div class="row" style="text-align: center; display: flex; align-items: center; justify-content: center;" data-aos="fade-right">
                       <div class="col-12 col-md-12 d-flex justify-content-center">
                           <img src="assets/images/spootan4.png" class="custom-img" alt="image" style="width: 90%; height: auto;">
                       </div>
@@ -278,7 +280,7 @@
         <div class="text-left">
             <ul class="dtr-social">
                 <li>
-                    <a class="dtr-behance" href="#" title="Behance" target="_blank" rel="nofollow" aria-label="Behance"></a>
+                    <a class="dtr-behance" href="https://www.behance.net/11chacaylian" title="Behance" target="_blank" rel="nofollow" aria-label="Behance"></a>
                 </li>
                 </li>
                 <li>
@@ -308,6 +310,15 @@
     <!-- #dtr-wrapper ends -->
 
     <!-- JS Files -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // durasi animasi
+        once: true,     // animasi hanya sekali saat scroll pertama
+      });
+    </script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.easing.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

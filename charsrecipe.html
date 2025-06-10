@@ -24,10 +24,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <style>
        .custom-row {
         margin-top: 30px;
-    margin-bottom: 30px; /* ubah sesuai jarak yang diinginkan */
+    margin-bottom: 40px; /* ubah sesuai jarak yang diinginkan */
 
 }
     </style>
@@ -132,6 +135,8 @@
                        
                         <h6 class="mb-2">Role</h6>
                         <p>Social Media Strategist</p> 
+                        <h6 class="mb-2">Project</h6>
+                        <p>Self Project</p> 
                     </div>
                     <!-- column 1 ends -->
 
@@ -163,7 +168,7 @@
         <!-- page title section ends
 ================================================== -->
 
-<div class="dtr-page-title my-5" style="background-color: white; height: 500px; display: flex; justify-content: center; align-items: center;">
+<div class="dtr-page-title my-md-5" style="background-color: white; height: 500px; display: flex; justify-content: center; align-items: center;" data-aos="fade-left">
     <div class="container-fluid px-0">
         <div class="col-12 px-0">
             <img src="assets/images/cookingsoon_new.png" class="img-fluid w-100 h-100" style="object-fit: cover; margin-top: -95px;" alt="image">
@@ -193,7 +198,7 @@
               <!-- 2x2 image grid with smaller images -->
         <div class="row my-4">
             <!-- 2x2 image grid with reduced height only -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6"  data-aos="fade-right">
                 <div class="row g-0">
                     <!-- Baris pertama -->
                     <div class="col-6 text-center px-1 mb-2">
@@ -215,28 +220,25 @@
             </div>
     
             <!-- Bold text on the right -->
-            <div class="col-12 col-md-6 d-flex align-items-center ps-3">
+            <div class="col-12 col-md-6 d-flex align-items-center ps-3"  data-aos="fade-left">
                 <p style="font-weight: bold; font-size: 1rem; line-height: 1.6; margin-right: 0;">
-                    Char’s recipe collection is not only about visuals, but also the heartwarming stories behind each dish. 
-                    From traditional favorites passed down through generations to modern twists on comfort food, 
-                    every recipe brings a unique flavor to your table. Explore the rich textures, colors, and emotions 
-                    tied to these meals, all curated with love and shared from Char's cozy kitchen.
+                    The design supports this with a visually appealing and modern layout featuring a soft pastel palette in pink and beige for a warm, inviting feel. High-quality food photography prominently displays the creamy Mentai Rice and its toppings, while clean typography and subtle graphic elements add a contemporary touch, effectively communicating the brand's focus on delicious and visually attractive food.
                 </p>
             </div>
         </div>
 
-                    <div class="row custom-row">
+                    <div class="row custom-row" data-aos="fade-left">
                         <div class="col-12 col-md-12">
-                            <img src="assets/images/charsrecipe20.png" class="custom-img" alt="image" style="width: 100%; height: auto;">
+                            <img src="assets/images/charsrecipe20.png" class="custom-img" alt="image" style="width: 100%; height: 110%;">
                         </div>
                     </div>
-                    <div class="row custom-row">
+                    <div class="row custom-row" data-aos="fade-right">
                         <div class="col-12 col-md-12">
                             <img src="assets/images/charsrecipe21.png" class="custom-img" alt="image" style="width: 100%; height: auto;">
                         </div>
                     </div>
 
-                    <div class="row mb-5">
+                    <div class="row mb-5" data-aos="fade-left">
                         <div class="col-12 col-md-4">
                             <img src="assets/images/charsrec1.jpg" width="400" height="400" alt="image">
                         </div>
@@ -317,7 +319,7 @@
         <div class="text-left">
             <ul class="dtr-social">
                 <li>
-                    <a class="dtr-behance" href="#" title="Behance" target="_blank" rel="nofollow" aria-label="Behance"></a>
+                    <a class="dtr-behance" href="https://www.behance.net/11chacaylian" title="Behance" target="_blank" rel="nofollow" aria-label="Behance"></a>
                 </li>
                 </li>
                 <li>
@@ -347,6 +349,15 @@
     <!-- #dtr-wrapper ends -->
 
     <!-- JS Files -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // durasi animasi
+    once: true,     // animasi hanya sekali saat scroll pertama
+  });
+</script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.easing.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -358,6 +369,11 @@
     <script src="assets/js/custom.js"></script>
 
     <!-- JS Files for portfolio -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/masonry.min.js"></script>
     <script src="assets/js/isotope.js"></script>

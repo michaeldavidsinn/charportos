@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -121,9 +123,12 @@
 
                     <!-- column 1 starts -->
                     <div class="col-12 col-md-3">
-                        <h6 class="mb-2">Role</h6>
-                        <p>Poster & Mockup Design</p>
-                    </div>
+                      <h6 class="mb-2">Role</h6>
+                      <p>Poster & Mockup Design</p>
+                  
+                      <h6 class="mb-2 mt-4">Project</h6>
+                      <p>Innovation Design and Development 2024</p>
+                  </div>
                     <!-- column 1 ends -->
 
                     <!-- column 2 starts -->
@@ -158,7 +163,7 @@
 
         
 
-        <div class="dtr-page-title" style="background-color: white;">
+        <div class="dtr-page-title" style="background-color: white;" data-aos="fade-left">
           <div class="container-fluid px-0"> <!-- Gunakan container-fluid agar lebar penuh -->
               <div class="col-12 px-0">
                   <img src="assets/images/jete_billboard.png" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="image">
@@ -173,19 +178,12 @@
                 <div class="my-5"></div>
 
                <div class="row align-items-center mb-5">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                         <img src="assets/images/jete2.png" class="img-fluid" style="width: 87%;" alt="image">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                         <p style="font-weight: bold; font-size: 1rem; line-height: 1.6;">
-                            This is a long description or text that goes alongside the image. 
-                            You can write about the features, importance, or context of the image here. 
-                            The text can be as long as needed, and it will be placed next to the image in a responsive layout. 
-                            It can describe the significance, relevance, and any other important details. <br><br>
-                            This is a long description or text that goes alongside the image. 
-                            You can write about the features, importance, or context of the image here. 
-                            The text can be as long as needed, and it will be placed next to the image in a responsive layout. 
-                            It can describe the significance, relevance, and any other important details.
+                          The design language amplifies this with a sleek, dynamic aesthetic featuring neon blues and purples against dark backgrounds, creating a cybernetic feel. Central imagery highlights the eyewear with glowing accents and geometric patterns, underscored by modern, streamlined typography. This futuristic theme extends consistently across social media, web elements, and booth designs, employing vibrant colors and tech-inspired graphics to create a cohesive and immersive brand experience that visually reinforces its innovative nature.
                         </p>
                     </div>
                 </div>
@@ -194,16 +192,16 @@
                 <!-- Jete1 dan Jete3: Dua gambar horizontal sama besar, tidak terpotong -->
                 <div class="row mb-4 g-3">
                     <div class="row mb-4 g-3">
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-md-8" data-aos="fade-right">
                             <img src="assets/images/jete1.png" class="img-fluid w-100" style="height: auto;" alt="image">
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4" data-aos="fade-left">
                             <img src="assets/images/jete3.png" class="img-fluid w-100" style="height: auto; margin-top: 40px;" alt="image">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 d-flex justify-content-center gap-3" style="margin-left: 370px;">
+                <div class="col-12 col-md-4 d-flex justify-content-center gap-3" style="margin-left: 370px;" data-aos="fade-left">
                   <img src="assets/images/jete4.png" class="img-fluid" style="height: auto; width: 100%;" alt="image">
                   <img src="assets/images/jete5.png" class="img-fluid" style="height: auto; width: 100%;" alt="image">
                   <img src="assets/images/jete6.png" class="img-fluid" style="height: auto; width: 100%;" alt="image">
@@ -211,7 +209,7 @@
 
               <span class="spacer spacer-30"></span>
 
-              <div class="row mt-lg-5 mb-4">
+              <div class="row mt-lg-5 mb-4" data-aos="fade-right">
                 <div class="col-12 col-md-12 mx-auto text-center">
                     <img src="assets/images/jete7.png" class="img-fluid" style="width: 100%; max-width: 1000px; height: auto;" alt="image">
                 </div>
@@ -285,7 +283,7 @@
         <div class="text-left">
             <ul class="dtr-social">
                 <li>
-                    <a class="dtr-behance" href="#" title="Behance" target="_blank" rel="nofollow" aria-label="Behance"></a>
+                    <a class="dtr-behance" href="https://www.behance.net/11chacaylian" title="Behance" target="_blank" rel="nofollow" aria-label="Behance"></a>
                 </li>
                 </li>
                 <li>
@@ -313,6 +311,14 @@
         <a id="take-to-top" href="#" class="active" aria-label="Scroll To Top"></a>
     </div>
     <!-- #dtr-wrapper ends -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // durasi animasi
+        once: true,     // animasi hanya sekali saat scroll pertama
+      });
+    </script>
 
     <!-- JS Files -->
     <script src="assets/js/jquery.min.js"></script>
